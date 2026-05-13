@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face{
+	font-family: 'fodinha';
+	src: url("fontes/Asimovian-Regular.ttf");
+}
+
+body#corpo{
+	background: url("../imagens/fundo.jpg");
+}
+header#cabecalho{
+	border-bottom: solid 2px gray;
+}
+footer.rodape{
+	border-top: solid 2px gray;
+	text-align: center;
+}
+span.texto p{
+	text-align: justify;
+	font-size: 16pt;
+	font-family: "Anton", sans-serif;
+	text-indent: 50px;
+}
+figure.outrasFotos{
+	/*border: solid 3px rgb(0,0,0);*/
+	background-color: lightgray;
+	text-align: center;
+	box-shadow: 0px 0px 20px #000000;
+	border-radius: 80px;
+}
+figure.foto1{
+	text-align: center;
+	border-radius: 60px;
+	border: solid 8px #000000;
+	box-shadow: 6px 6px 6px gray;
+	background-color: lightblue;
+	width: 20%;
+	padding-top: 5px;
+	border-radius: 10px;
+	float: right;
+	transition: transform 1.5s;
+}
+figure.foto1:hover{
+	transform: rotateZ(10deg);
+}
+figure.foto1 h4{
+	margin-top: -4px;
+	margin-bottom: 0px;
+	background-color: yellow;
+}
+figure.foto1 img{
+	width: 95%;
+	height: 150px;
+}
+/*Formatação do menu principal*/
+nav#menu h3{
+	display: none;
+}
+nav#menu ol{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	right: 60px;
+}
+nav#menu li{
+	display: inline-block;
+	background-color: lightgray;
+	padding: 10px;
+	margin: 3px;
+	border-radius: 10px;
+	transition: backgroud-color 2s, transform 1s;
+}
+nav#menu li:hover{
+	background-color: darkgray;
+	transform: rotateZ(-15deg);
+	transition: transform 1s; 
+}
+nav#menu a{
+	color: black;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: white;
+	text-decoration: underline;
+}
+/*Formatação dos titulos do article*/
+article#artigo h1{
+	background-color: gray;
+	text-shadow: 2px 2px 2px yellow;
+	font-size: 25pt;
+	text-align: center;
+	transition: all 1s;
+	font-family: 'fodinha';
+}
+article#artigo h1:hover{
+	letter-spacing: 20px;
+}
+header#cabecalho img.logo{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+}
+hgroup.titulos h1{
+	text-transform: uppercase;
+	font-size: 30pt;
+	letter-spacing: -20px;
+	width: 35%;
+	border-radius: 20px;
+	transition: all 2s;
+}
+hgroup.titulos h1:hover{
+	letter-spacing: 6px;
+	background-color: blue;
+	color: white;
+	box-shadow: 6px 6px 6px gray;
+	margin-left: 9px;
+}
+/*Formatação dos icones*/
+header#cabecalho img.icone{
+	position: absolute;
+	top: 70px;
+	right: 80px;
+}
+/*Formatação da tabela*/
+table{
+	border: solid 3px gray;
+	border-spacing: 0px;
+	background-color: white;
+	float: left;
+}
+caption{
+	background-color: gray;
+	font-size: 15pt;
+}
+table.produtos th{
+	background-color: aliceblue;
+	border: solid 1px black;
+}
+table.produtos td{
+	border: solid 2px red;
+	text-align: center;
+	padding: 10px;
+	transition: all 1s;
+}
+table.produtos td:hover{
+	background-color: #000000;
+	color: white;
+	border-radius: 20px;
+}
+/*Alinhamento dos videos*/
+iframe.video{
+	margin-left: 90px;
+}
+/*Formulário Web*/
+form.contato{
+	width: 50%;
+	background-color: white;
+	margin: auto;
+}
+form.contato fieldset.sexo{
+	width: 25%
+}
+/*
+background: url("foto.jpg") no-repeat 550px(horizontal) 70px(vertical); insere fotos de fundo, no repeat pra não repitir
+padding: 10px; espaçamento interno, tem os negocio do top, left, right, bottom
+margin: 7px; espaçamento externo, tem os negocio do top, left, etc
+largura: width: 42%;, pode mudar a largura de qualquer coisa
+altura: height: 110px;, pode mudar a altura de qualquer coisa
+largura acompanha altura, altura NÃO acompanha largura
+float: left ou right;, vai pra esquerda e pra direita
+text-shadow: 2px 2px 3px black;, horizontal vertical espalhamento
+text-align: center, right, left, justify;, centro, direita, esquerda, alinhado nos 2 lados
+border: solid, dashed, dotted, double 4 px black;, linha reta, traços, pontos, 2 linhas uma em cima da outra
+text-decoration: underline, overline, linetrough, none;, embaixo da linha, em cima da linha, na linha, sem nenhum risco(pode tirar linha de hipertexto)
+text-transform: uppercase, lowercase, capitalize;, tudo maiusculo, tudo minusculo, so a 1 letra maiusculo em cada palavra
+text-indent: 50px; espaço no inicio do texto
+border-radius: 35px; arredondamento de cantos
+border ou backgroundcolor funciona
+border+ background color funciona
+display: inline-block, none;, none faz não aparecer nada, faz aparecer do lado
+list-style: disk, circle, square, decimal, upper-lower-roman, upper-lower-alpha, none;, exclusiva das listas 
+position: absolute;, passa por cima das coisas, tem os negocio do top, left, etc
+right: 200px;, os top, bottom etc podem ser usados como formatação, não pode ter opostos juntos
+top sem bottom e left sem right
+:hover permite aplcar estilos a um elemento html apenas quando o ponteiro do mouse esta posicionado sobre o elemento html
+trastion: all 2s; causa efeito de transição, levando em consideração o tempo para ocorrer, escreve somente a formatação, sem conteudo, para selecinar tudo escrever all
+transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);, gira pra cima e pra baixo, gira pra direita e esquerda, misto
+letter-spacing: 15px; espaçamento entre letras
+border-spacing: 5x; esaçamento entre bordas
+@font-face{ serve pra mexer com fontes internas
+	font-family: 'fontenova'; qualquer nome
+	src: url("nome do arquivo")
+} em outra area de formatação usar o 'fontenova' junto fo font family
+*/
