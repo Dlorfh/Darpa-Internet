@@ -162,35 +162,3 @@ form.contato{
 form.contato fieldset.sexo{
 	width: 25%
 }
-/*
-background: url("foto.jpg") no-repeat 550px(horizontal) 70px(vertical); insere fotos de fundo, no repeat pra não repitir
-padding: 10px; espaçamento interno, tem os negocio do top, left, right, bottom
-margin: 7px; espaçamento externo, tem os negocio do top, left, etc
-largura: width: 42%;, pode mudar a largura de qualquer coisa
-altura: height: 110px;, pode mudar a altura de qualquer coisa
-largura acompanha altura, altura NÃO acompanha largura
-float: left ou right;, vai pra esquerda e pra direita
-text-shadow: 2px 2px 3px black;, horizontal vertical espalhamento
-text-align: center, right, left, justify;, centro, direita, esquerda, alinhado nos 2 lados
-border: solid, dashed, dotted, double 4 px black;, linha reta, traços, pontos, 2 linhas uma em cima da outra
-text-decoration: underline, overline, linetrough, none;, embaixo da linha, em cima da linha, na linha, sem nenhum risco(pode tirar linha de hipertexto)
-text-transform: uppercase, lowercase, capitalize;, tudo maiusculo, tudo minusculo, so a 1 letra maiusculo em cada palavra
-text-indent: 50px; espaço no inicio do texto
-border-radius: 35px; arredondamento de cantos
-border ou backgroundcolor funciona
-border+ background color funciona
-display: inline-block, none;, none faz não aparecer nada, faz aparecer do lado
-list-style: disk, circle, square, decimal, upper-lower-roman, upper-lower-alpha, none;, exclusiva das listas 
-position: absolute;, passa por cima das coisas, tem os negocio do top, left, etc
-right: 200px;, os top, bottom etc podem ser usados como formatação, não pode ter opostos juntos
-top sem bottom e left sem right
-:hover permite aplcar estilos a um elemento html apenas quando o ponteiro do mouse esta posicionado sobre o elemento html
-trastion: all 2s; causa efeito de transição, levando em consideração o tempo para ocorrer, escreve somente a formatação, sem conteudo, para selecinar tudo escrever all
-transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);, gira pra cima e pra baixo, gira pra direita e esquerda, misto
-letter-spacing: 15px; espaçamento entre letras
-border-spacing: 5x; esaçamento entre bordas
-@font-face{ serve pra mexer com fontes internas
-	font-family: 'fontenova'; qualquer nome
-	src: url("nome do arquivo")
-} em outra area de formatação usar o 'fontenova' junto fo font family
-*/
